@@ -16,6 +16,7 @@ Changes:
 **Type of change**
 
 - [ ] New feature
+- [ ] Enhancement
 - [ ] Bug fix
 - [ ] Front-end
 - [ ] Backend
