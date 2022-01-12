@@ -17,30 +17,21 @@
 
 ### Usage
 
-* Terraform (basic example):
+* Terragrunt (terragrunt.hcl example):
+Module is referenced in a infra repo and can be then deployed to multiple accounts.
 
 ```hcl
-module "module_name" {
-  source = "git::git@github.com:jperez3/taccoform-modules.git//vendors/cloudprovider/vm?ref=cloud-vm-v1.0.0"
-
-  env     = "prod"
-  service = "burrito"
-
+locals {
+  version = "v0.1.0"
 }
 
-```
+terraform {
+  source = "git::git@github.com:avenuebankau/infra-modules.git//module-name?ref=${local.version}"
+}
 
-* Terraform (alternate example):
-
-```hcl
-module "alt_module_name" {
-  source = "git::git@github.com:jperez3/taccoform-modules.git//vendors/cloudprovider/vm?ref=cloud-resource-v1.0.0"
-
+inputs = {
   env     = "prod"
   service = "burrito"
-  size    = "big"
-  meat    = "chicken"
-
 }
 
 ```
