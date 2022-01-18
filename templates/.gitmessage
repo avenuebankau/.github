@@ -1,11 +1,13 @@
-jira-issue:feat: add hat wobble
-^--------^ ^--^  ^------------^
-|          |     |
-|          |     +-> Summary in present tense.
+jira-issue:feat:patch add hat wobble
+^--------^ ^--^ ^___^ ^------------^
+|          |    |     |
+|          |    |     +-> Summary in present tense.
+|          |    |
+|          |    +-------> Semantic Version: major, minor, patch
 |          |
-|          +-------> Type: chore, docs, feat, fix, refactor, style, or test.
+|          +------------> Type: chore, docs, feat, fix, refactor, style, or test.
 |
-+------------------> Jira Issue Id: eg. AIP-212
++-----------------------> Jira Issue Id: eg. AIP-212
 
 Types:
 * feat: (new feature for the user, not a new feature for build script)
@@ -15,3 +17,8 @@ Types:
 * refactor: (refactoring production code, eg. renaming a variable)
 * test: (adding missing tests, refactoring tests; no production code change)
 * chore: (updating grunt tasks etc; no production code change)
+
+Semantic Version:
+* major: non-backwards compatible change (will bump first digit of version number)
+* minor: backwards compatible change (will bump middle digit of version number)
+* fix: backwards compatible bug fix (will bump last digit of version number)
