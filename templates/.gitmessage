@@ -21,4 +21,4 @@ Types:
 Semantic Version:
 * major: non-backwards compatible change (will bump first digit of version number)
 * minor: backwards compatible change (will bump middle digit of version number)
-* fix: backwards compatible bug fix (will bump last digit of version number)
+* patch: backwards compatible bug fix (will bump last digit of version number)
