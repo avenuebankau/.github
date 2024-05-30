@@ -17,6 +17,7 @@ Changes:
 
 - [ ] New feature
 - [ ] Enhancement
+- [ ] Security
 - [ ] Bug fix
 - [ ] Front-end
 - [ ] Backend
@@ -24,6 +25,8 @@ Changes:
 
 **Checklist:**
 
+- [ ] Check code security / container security scans for criticals
+- [ ] Bumped docker base image if available
 - [ ] Unit tested
 - [ ] Updated relate wiki or Confluence page(s)
 - [ ] Any dependent changes have been merged and published in downstream modules
