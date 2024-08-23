@@ -1,24 +1,17 @@
-jira-issue:feat:patch add hat wobble
-^--------^ ^--^ ^___^ ^------------^
-|          |    |     |
-|          |    |     +-> Summary in present tense.
-|          |    |
-|          |    +-------> Semantic Version: major, minor, patch
-|          |
-|          +------------> Type: chore, docs, feat, fix, refactor, style, or test.
-|
-+-----------------------> Jira Issue Id: eg. AIP-212
+<type>(<scope>): <JIRA> <short summary>
+  │       │       │       │
+  │       │       │       └─⫸ Summary in present tense. Not capitalized. No period at the end.
+  │       │       │
+  │       │       └─⫸ Jira Issue Id: eg. AIP-212
+  │       │
+  │       └─⫸ Commit Scope: API|Kafka|Database|global (optional)
+  │                          Scope can be anything based on the type of change. If it impacts multiple areas, then it can be global.
+  │
+  └─⫸ Commit Type: fix|hotfix|refactor|revert|docs|patch|feat|feature|minor|breaking|perf|major
 
-Types:
-* feat: (new feature for the user, not a new feature for build script)
-* fix: (bug fix for the user, not a fix to a build script)
-* docs: (changes to the documentation)
-* style: (formatting, missing semi colons, etc; no production code change)
-* refactor: (refactoring production code, eg. renaming a variable)
-* test: (adding missing tests, refactoring tests; no production code change)
-* chore: (updating grunt tasks etc; no production code change)
+Note: There MUST be a space after the first colon.
 
 Semantic Version:
-* major: non-backwards compatible change (will bump first digit of version number)
-* minor: backwards compatible change (will bump middle digit of version number)
-* patch: backwards compatible bug fix (will bump last digit of version number)
+* breaking|perf|major: non-backwards compatible change (will bump first digit of version number)
+* feat|feature|minor: backwards compatible change (will bump middle digit of version number)
+* fix|hotfix|refactor|revert|docs|patch: backwards compatible bug fix (will bump last digit of version number)
